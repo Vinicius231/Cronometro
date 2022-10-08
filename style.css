@@ -1,0 +1,82 @@
+body {
+    background: gray;
+    color: white;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+}
+.clock {
+    background: black;
+    border-radius: 50%;
+    width: 500px;
+    height: 500px;
+    position: relative;
+    text-align: center;
+}
+.time {
+    padding: 150px;
+}
+span {
+    margin-top: 100px;
+    font-size: 35pt;
+}
+button {
+    width: 100px;
+    height: 40px;
+    font: bolder 15pt Arial;
+}
+button:hover {
+    cursor: pointer;
+    width: 105px;
+    height: 45px;
+    border: none;
+}
+.borda {
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    border-radius: 50%;
+    border-top: 30px solid blue;  
+}
+@keyframes clockanime {
+    0% {
+        transform: rotate(0deg);
+    }
+    0% {
+        transform: rotate(360deg);
+    }
+}
+
+.animeBorda {
+    animation: clockanime 1s;
+}
+
+@media (max-width: 493px) {
+    .clock {
+        width: 300px;
+        height: 300px;     
+    }
+    span {
+        font-size: 20pt;
+        margin-top: 0;
+    }
+    .time {
+        padding: 80px;
+    }
+    button {
+        width: 77px;
+        height: 20px;
+        font: bolder 12pt Arial;
+    }
+    button:hover {
+        cursor: pointer;
+        width: 77px;
+        height: 30px;
+        border: none;
+    }
+    .borda {
+        width: 300px;
+        height: 300px; 
+    }
+}
